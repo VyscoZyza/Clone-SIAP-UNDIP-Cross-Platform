@@ -23,8 +23,10 @@ class _HistoryPageState extends State<HistoryPage> {
         title: Text('Riwayat Absen'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
+            margin: const EdgeInsets.only(left: 10, right: 10),
             child: Card(
               elevation: 3,
               shape: RoundedRectangleBorder(
@@ -74,7 +76,7 @@ class _HistoryPageState extends State<HistoryPage> {
                 children: <Widget>[
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -109,7 +111,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -144,7 +146,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -179,7 +181,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -214,7 +216,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -249,7 +251,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -284,7 +286,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -319,7 +321,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -354,7 +356,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -389,7 +391,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -424,7 +426,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                   Container(
                     child: Card(
-                      elevation: 5,
+                      elevation: 2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -466,22 +468,3 @@ class _HistoryPageState extends State<HistoryPage> {
     );
   }
 }
-
-//Container(
-//margin: const EdgeInsets.only(top: 16),
-//child: Row(
-//mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//children: <Widget>[
-//Text(
-//'Semua',
-//style: TextStyle(fontSize: 15),
-//),
-//FlatButton(
-//child: Icon(
-//Icons.arrow_drop_down,
-//color: Colors.black,
-//),
-//),
-//],
-//),
-//)

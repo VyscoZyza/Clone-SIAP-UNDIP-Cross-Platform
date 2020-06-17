@@ -63,56 +63,115 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     children: <Widget>[
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          FlatButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) => IsiIrs(),
+                          Column(
+                            children: <Widget>[
+                              FlatButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          IsiIrs(),
+                                    ),
+                                  );
+                                },
+                                child: Column(
+                                  children: <Widget>[
+                                    Icon(
+                                      Icons.playlist_add,
+                                      size: 30,
+                                      color: Colors.blue,
+                                    ),
+                                    Text(
+                                      'Isi IRS',
+                                      style: TextStyle(
+                                          fontSize: 12, color: Colors.blue),
+                                    ),
+                                  ],
                                 ),
-                              );
-                            },
-                            child: Column(
-                              children: <Widget>[
-                                Icon(
-                                  Icons.playlist_add,
-                                  size: 30,
-                                  color: Colors.blue,
+                              ),
+                              Container(
+                                margin: const EdgeInsets.only(top: 20),
+                                child: FlatButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            Jadwal(),
+                                      ),
+                                    );
+                                  },
+                                  child: Column(
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.calendar_today,
+                                        size: 30,
+                                        color: Colors.blue,
+                                      ),
+                                      Text(
+                                        'Jadwal',
+                                        style: TextStyle(
+                                            fontSize: 12, color: Colors.blue),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                                Text(
-                                  'Isi IRS',
-                                  style: TextStyle(fontSize: 12),
-                                ),
-                              ],
-                            ),
+                              )
+                            ],
                           ),
                           Container(
                             margin: const EdgeInsets.only(left: 55, right: 55),
-                            child: FlatButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (BuildContext context) =>
-                                        DaftarIrs(),
+                            child: Column(
+                              children: <Widget>[
+                                FlatButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            DaftarIrs(),
+                                      ),
+                                    );
+                                  },
+                                  child: Column(
+                                    children: <Widget>[
+                                      Icon(
+                                        Icons.playlist_add_check,
+                                        size: 30,
+                                        color: Colors.blue,
+                                      ),
+                                      Text(
+                                        'IRS',
+                                        style: TextStyle(
+                                            fontSize: 12, color: Colors.blue),
+                                      ),
+                                    ],
                                   ),
-                                );
-                              },
-                              child: Column(
-                                children: <Widget>[
-                                  Icon(
-                                    Icons.playlist_add_check,
-                                    size: 30,
-                                    color: Colors.blue,
+                                ),
+                                Container(
+                                  margin: const EdgeInsets.only(top: 20),
+                                  child: FlatButton(
+                                    child: Column(
+                                      children: <Widget>[
+                                        Icon(
+                                          Icons.book,
+                                          size: 30,
+                                          color: Colors.blue,
+                                        ),
+                                        Text(
+                                          'Tugas Akhir',
+                                          style: TextStyle(
+                                              fontSize: 12, color: Colors.blue),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                  Text(
-                                    'IRS',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
+                                )
+                              ],
                             ),
                           ),
                           FlatButton(
@@ -134,63 +193,64 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 Text(
                                   'KHS',
-                                  style: TextStyle(fontSize: 12),
+                                  style: TextStyle(
+                                      fontSize: 12, color: Colors.blue),
                                 ),
                               ],
                             ),
                           ),
                         ],
                       ),
-                      Container(
-                        margin: const EdgeInsets.only(top: 20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            FlatButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (BuildContext context) => Jadwal(),
-                                  ),
-                                );
-                              },
-                              child: Column(
-                                children: <Widget>[
-                                  Icon(
-                                    Icons.calendar_today,
-                                    size: 30,
-                                    color: Colors.blue,
-                                  ),
-                                  Text(
-                                    'Jadwal',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              margin:
-                                  const EdgeInsets.only(left: 55, right: 55),
-                              child: FlatButton(
-                                child: Column(
-                                  children: <Widget>[
-                                    Icon(
-                                      Icons.library_books,
-                                      size: 30,
-                                      color: Colors.blue,
-                                    ),
-                                    Text(
-                                      'Tugas Akhir',
-                                      style: TextStyle(fontSize: 12),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+//                      Container(
+//                        margin: const EdgeInsets.only(top: 20),
+//                        child: Row(
+//                          mainAxisAlignment: MainAxisAlignment.start,
+//                          children: <Widget>[
+//                            FlatButton(
+//                              onPressed: () {
+//                                Navigator.push(
+//                                  context,
+//                                  MaterialPageRoute(
+//                                    builder: (BuildContext context) => Jadwal(),
+//                                  ),
+//                                );
+//                              },
+//                              child: Column(
+//                                children: <Widget>[
+//                                  Icon(
+//                                    Icons.calendar_today,
+//                                    size: 30,
+//                                    color: Colors.blue,
+//                                  ),
+//                                  Text(
+//                                    'Jadwal',
+//                                    style: TextStyle(fontSize: 12),
+//                                  ),
+//                                ],
+//                              ),
+//                            ),
+//                            Container(
+//                              margin:
+//                                  const EdgeInsets.only(left: 55, right: 55),
+//                              child: FlatButton(
+//                                child: Column(
+//                                  children: <Widget>[
+//                                    Icon(
+//                                      Icons.library_books,
+//                                      size: 30,
+//                                      color: Colors.blue,
+//                                    ),
+//                                    Text(
+//                                      'Tugas Akhir',
+//                                      style: TextStyle(fontSize: 12),
+//                                    ),
+//                                  ],
+//                                ),
+//                              ),
+//                            ),
+//                          ],
+//                        ),
+//                      ),
                     ],
                   ),
                 ), //Enter all the flat Buttons here
