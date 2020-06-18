@@ -3,6 +3,7 @@ import 'package:myproject/activity/IsiIrs.dart';
 import 'package:myproject/activity/DaftarIrs.dart';
 import 'package:myproject/activity/DaftarKHS.dart';
 import 'package:myproject/activity/Jadwal.dart';
+import 'package:myproject/activity/TugasAkhir.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -155,6 +156,15 @@ class _HomePageState extends State<HomePage> {
                                 Container(
                                   margin: const EdgeInsets.only(top: 20),
                                   child: FlatButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              TugasAkhir(),
+                                        ),
+                                      );
+                                    },
                                     child: Column(
                                       children: <Widget>[
                                         Icon(

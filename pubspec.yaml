@@ -26,6 +26,8 @@ dependencies:
   barcode_scan: ^2.0.1
   table_calendar: ^2.2.3
   shared_preferences:
+  zefyr: ^0.11.0
+  quill_delta: ^1.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
