@@ -64,7 +64,7 @@ class _IsiIrsState extends State<IsiIrs> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           Container(
-            width: 450,
+            width: 495,
             height: 100,
             color: Colors.blue,
             child: Container(

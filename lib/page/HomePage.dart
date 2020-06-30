@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   image: DecorationImage(
                     image: AssetImage(
-                      'src/undip.png',
+                      'src/img/undip.png',
                     ),
                   ),
                 ),

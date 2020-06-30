@@ -1,4 +1,5 @@
 import 'package:barcode_scan/barcode_scan.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -45,7 +46,8 @@ class _ScanActivityState extends State<ScanActivity> {
                 },
               ),
               Text(
-                'Result: $barcode',
+                'Result: \n$barcode',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 textAlign: TextAlign.center,
               ),
             ],
@@ -55,3 +57,22 @@ class _ScanActivityState extends State<ScanActivity> {
     );
   }
 }
+//
+//Future<String> onScan() async {
+//  try {
+//    var scannedCode = await BarcodeScanner.scan();
+//    setState(() {
+//      this.barcode = scannedCode;
+//    });
+//  } on PlatformException catch (error) {
+//    if (error.code == BarcodeScanner.CameraAccessDenied) {
+//      setState(() {
+//        this.barcode = 'Camera permission denied';
+//      });
+//    } else {
+//      setState(() {
+//        this.barcode = 'Error: $error';
+//      });
+//    }
+//  }
+//}

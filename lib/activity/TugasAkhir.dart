@@ -80,34 +80,42 @@ class _TugasAkhirState extends State<TugasAkhir> {
                 ),
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Container(
-                  padding: EdgeInsets.only(left: 10, right: 10),
+            Container(
+              margin: EdgeInsets.only(right: 10),
+              child: Image.asset(
+                'src/img/notcan.jpg',
+                height: 35,
+              ),
+            ),
+            TextField(
+              autofocus: false,
+              decoration: InputDecoration(labelText: 'Referensi 1'),
+            ),
+            TextField(
+              autofocus: false,
+              decoration: InputDecoration(labelText: 'Referensi 2'),
+            ),
+            TextField(
+              autofocus: false,
+              decoration: InputDecoration(labelText: 'Referensi 3'),
+            ),
+            FlatButton(
+              child: Container(
+                decoration: BoxDecoration(
                   color: Colors.blue,
-                  height: 30,
-                  margin: EdgeInsets.only(left: 10, right: 10),
-                  child: Row(
-                    children: <Widget>[
-                      Text(
-                        'B',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                      ),
-                      Text(
-                        'I',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                      ),
-                    ],
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30.0),
                   ),
-                )
-              ],
+                ),
+                child: Center(
+                    child: Text(
+                  'Daftar',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                )),
+                margin: EdgeInsets.only(top: 20),
+                height: 40,
+                width: 300,
+              ),
             )
           ],
         ),
